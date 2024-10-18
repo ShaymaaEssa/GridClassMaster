@@ -1,0 +1,92 @@
+@media  screen and (min-width:480px) {
+    .parent{
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-areas: 
+        "mainTitle mainTitle"
+        "mobile mobile"
+        "keyboard controller"
+        "machintosh text"
+        "twitter flobby"
+        "ipad flobby"
+        "secondTitle secondTitle"
+        "tv tv";
+    }
+
+    .child1 h1{
+        width: 60%;
+        margin-inline: auto;
+    }
+    /* child2-start */
+    .child2{
+        flex-direction: row;
+        column-gap: 10px;
+        justify-content: space-around;
+    }
+
+    .child2 div:nth-child(1){
+        width: 32%;
+        align-self: center;
+    }
+
+    .child2 .mobile-img{
+        width: 40%;
+        margin: 0;
+    }
+
+    /* child2-end */
+
+    /* child5-start */
+    .child5{
+        width: 70%;
+        margin: auto;
+    }
+
+    .child5 .div-img{
+        width: 250%;
+        right: 160%;
+    }
+
+    /* child5-end */
+
+    .child6{
+        width: 80%;
+    }
+
+    .child11{
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .child11 .div-img{
+        width: 40%;
+        bottom:10%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .parent{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr) 0.5fr;
+        grid-template-areas: 
+        "mobile mobile mainTitle mainTitle"
+        "keyboard machintosh text flobby"
+        "controller ipad ipad flobby"
+        "twitter secondTitle tv tv"
+        ;
+    }
+
+    .child11 h3 {
+        width: 40%;
+        margin-inline: auto;
+    }
+
+    .child5{
+        width: 100%;
+        padding: 100px 80px 0 ;
+    }
+
+    .child11{
+        padding: 0;
+    }
+
+}
